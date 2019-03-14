@@ -91,7 +91,7 @@ class WebFormsApi(object):
                 params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `get_web_form`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
             raise ValueError("Invalid value for parameter `id` when calling `get_web_form`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
         collection_formats = {}
 
