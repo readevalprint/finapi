@@ -174,8 +174,8 @@ class BankConnectionsApi(object):
                 params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `delete_bank_connection`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `delete_bank_connection`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `delete_bank_connection`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -273,8 +273,8 @@ class BankConnectionsApi(object):
                 params['body'] is None):
             raise ValueError("Missing the required parameter `body` when calling `edit_bank_connection`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `edit_bank_connection`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `edit_bank_connection`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -456,8 +456,8 @@ class BankConnectionsApi(object):
                 params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `get_bank_connection`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `get_bank_connection`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `get_bank_connection`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -549,8 +549,8 @@ class BankConnectionsApi(object):
                 params['ids'] is None):
             raise ValueError("Missing the required parameter `ids` when calling `get_multiple_bank_connections`")  # noqa: E501
 
-        if 'ids' in params and not re.search(r'[\\d]+,[\\d,]+', params['ids']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `ids` when calling `get_multiple_bank_connections`, must conform to the pattern `/[\\d]+,[\\d,]+/`")  # noqa: E501
+        if 'ids' in params and not re.search(r'[\d]+,[\d,]+', params['ids']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `ids` when calling `get_multiple_bank_connections`, must conform to the pattern `/[\d]+,[\d,]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

@@ -207,8 +207,8 @@ class SecuritiesApi(object):
                 params['ids'] is None):
             raise ValueError("Missing the required parameter `ids` when calling `get_multiple_securities`")  # noqa: E501
 
-        if 'ids' in params and not re.search(r'[\\d]+,[\\d,]+', params['ids']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `ids` when calling `get_multiple_securities`, must conform to the pattern `/[\\d]+,[\\d,]+/`")  # noqa: E501
+        if 'ids' in params and not re.search(r'[\d]+,[\d,]+', params['ids']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `ids` when calling `get_multiple_securities`, must conform to the pattern `/[\d]+,[\d,]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -301,8 +301,8 @@ class SecuritiesApi(object):
                 params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `get_security`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `get_security`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `get_security`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

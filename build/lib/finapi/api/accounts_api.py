@@ -91,8 +91,8 @@ class AccountsApi(object):
                 params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `delete_account`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `delete_account`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `delete_account`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -269,8 +269,8 @@ class AccountsApi(object):
                 params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `edit_account`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `edit_account`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `edit_account`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -546,8 +546,8 @@ class AccountsApi(object):
                 params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `get_account`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `get_account`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `get_account`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -876,8 +876,8 @@ class AccountsApi(object):
                 params['ids'] is None):
             raise ValueError("Missing the required parameter `ids` when calling `get_multiple_accounts`")  # noqa: E501
 
-        if 'ids' in params and not re.search(r'[\\d]+,[\\d,]+', params['ids']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `ids` when calling `get_multiple_accounts`, must conform to the pattern `/[\\d]+,[\\d,]+/`")  # noqa: E501
+        if 'ids' in params and not re.search(r'[\d]+,[\d,]+', params['ids']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `ids` when calling `get_multiple_accounts`, must conform to the pattern `/[\d]+,[\d,]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

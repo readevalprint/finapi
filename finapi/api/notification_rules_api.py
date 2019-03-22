@@ -265,8 +265,8 @@ class NotificationRulesApi(object):
                 params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `delete_notification_rule`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `delete_notification_rule`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `delete_notification_rule`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -454,8 +454,8 @@ class NotificationRulesApi(object):
                 params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `get_notification_rule`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `get_notification_rule`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `get_notification_rule`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

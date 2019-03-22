@@ -190,8 +190,8 @@ class TransactionsApi(object):
                 params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `delete_transaction`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `delete_transaction`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `delete_transaction`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -380,8 +380,8 @@ class TransactionsApi(object):
                 params['body'] is None):
             raise ValueError("Missing the required parameter `body` when calling `edit_multiple_transactions_deprecated`")  # noqa: E501
 
-        if 'ids' in params and not re.search(r'[\\d]+,[\\d,]+', params['ids']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `ids` when calling `edit_multiple_transactions_deprecated`, must conform to the pattern `/[\\d]+,[\\d,]+/`")  # noqa: E501
+        if 'ids' in params and not re.search(r'[\d]+,[\d,]+', params['ids']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `ids` when calling `edit_multiple_transactions_deprecated`, must conform to the pattern `/[\d]+,[\d,]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -482,8 +482,8 @@ class TransactionsApi(object):
                 params['body'] is None):
             raise ValueError("Missing the required parameter `body` when calling `edit_transaction`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `edit_transaction`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `edit_transaction`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -771,8 +771,8 @@ class TransactionsApi(object):
                 params['ids'] is None):
             raise ValueError("Missing the required parameter `ids` when calling `get_multiple_transactions`")  # noqa: E501
 
-        if 'ids' in params and not re.search(r'[\\d]+,[\\d,]+', params['ids']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `ids` when calling `get_multiple_transactions`, must conform to the pattern `/[\\d]+,[\\d,]+/`")  # noqa: E501
+        if 'ids' in params and not re.search(r'[\d]+,[\d,]+', params['ids']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `ids` when calling `get_multiple_transactions`, must conform to the pattern `/[\d]+,[\d,]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -865,8 +865,8 @@ class TransactionsApi(object):
                 params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `get_transaction`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `get_transaction`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `get_transaction`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -958,8 +958,8 @@ class TransactionsApi(object):
                 params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `restore_transaction`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `restore_transaction`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `restore_transaction`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -1057,8 +1057,8 @@ class TransactionsApi(object):
                 params['body'] is None):
             raise ValueError("Missing the required parameter `body` when calling `split_transaction`")  # noqa: E501
 
-        if 'id' in params and not re.search(r'[\\d]+', params['id']):  # noqa: E501
-            raise ValueError("Invalid value for parameter `id` when calling `split_transaction`, must conform to the pattern `/[\\d]+/`")  # noqa: E501
+        if 'id' in params and not re.search(r'[\d]+', params['id']):  # noqa: E501
+            raise ValueError("Invalid value for parameter `id` when calling `split_transaction`, must conform to the pattern `/[\d]+/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
